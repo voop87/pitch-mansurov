@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "Rajdhani";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/rajdhani-medium-webfont.woff2") format("woff2"),
+		url("../fonts/rajdhani-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Rajdhani";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/rajdhani-regular-webfont.woff2") format("woff2"),
+		url("../fonts/rajdhani-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Rajdhani";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/rajdhani-bold-webfont.woff2") format("woff2"),
+		url("../fonts/rajdhani-bold-webfont.woff") format("woff");
+}
+
+html {
+	font-size: 62.5%;
+}
+
+
+body {
+	position: relative;
+
+	min-width: 320px;
+	max-width: $desktop-width;
+	margin: 0 auto;
+
+	font-family: "Rajdhani", "Arial", "Helvetica", sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-weight: 500;
+	color: $primary-dark;
+	background-color: $bg-color;
+}
+
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-dark;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+@media (max-width: $tablet-width) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+	.container {
+		width: 95.56%;
+		margin: 0 auto;
+	}
+}
+
+.section-title {
+	margin: 0;
+	margin-bottom: 16px;
+	color: $primary-light;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.flex-wrapper {
+	display: flex;
+}
+
+@media (min-width: $desktop-width) {
+	main {
+		display: flex;
+	}
+
+	.container {
+		margin: 0 auto;
+		padding: 0 52px;
+	}
+}

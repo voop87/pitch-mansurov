@@ -1,0 +1,27 @@
+.item-card__title {
+	margin: 0;
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+	font-weight: 500;
+}
+
+.item-card__info {
+	margin: 16px 0;
+	color: $primary-light;
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	opacity: .8;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+	.item-card__title {
+		font-size: 4.8rem;
+		line-height: 5.6rem;
+	}
+
+	.item-card__info {
+		margin-bottom: 4px;
+		font-size: 2rem;
+		line-height: 3.2rem;
+	}
+}

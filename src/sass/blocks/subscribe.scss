@@ -1,0 +1,144 @@
+.subscribe {
+	margin-bottom: 12px;
+
+	& b {
+		font-size: 2.4rem;
+		line-height: 3.2rem;
+		font-weight: 500;
+	}
+
+	& p {
+		width: 255px;
+		margin-bottom: 28px;
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+		color: $primary-light;
+		opacity: .8;
+	}
+
+	& ul {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.subscribe__form .flex-wrapper {
+	display: block;
+}
+
+.subscribeForm__input {
+	width: 100%;
+	max-width: 456px;
+	display: block;
+	margin-bottom: 16px;
+	padding: 16px;
+	background-color: rgba($primary-light, .2);
+	border-radius: 1px;
+	box-sizing: border-box;
+	border: none;
+}
+
+.subscribeForm__radio-title {
+	font-size: 2rem;
+	line-height: 3.2rem;
+	color: $primary-light;
+}
+
+.subscribeForm__radio-label {
+	position: relative;
+	margin-right: 24px;
+	padding-left: 30px;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: -3px;
+		left: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		box-sizing: border-box;
+		border: 1px solid $primary-light;
+		border-radius: 50%;
+	}
+}
+
+.subscribeForm__radio:checked+.subscribeForm__radio-label::after,
+.subscribeForm__radio-label:hover::after {
+	top: 1px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border: none;
+	background-color: $primary-dark;
+}
+
+.subscribeForm__radio-label:hover::after {
+	background-color: $primary-light;
+}
+
+.subscribeForm__checkbox-label {
+	position: relative;
+	display: block;
+	margin-bottom: 16px;
+	padding-left: 30px;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 2px;
+		left: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		box-sizing: border-box;
+		border: 1px solid $primary-light;
+		border-radius: 1px;
+	}
+}
+
+.subscribeForm__checkbox-label:hover::after,
+.subscribeForm__checkbox:checked+.subscribeForm__checkbox-label::after {
+	background-image: url("../images/check-gray.svg");
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+	background-size: 10px 9px;
+	border-color: $primary-dark;
+}
+
+.subscribeForm__checkbox:checked+.subscribeForm__checkbox-label::before {
+	background-color: $primary-dark;
+}
+
+.subscribeForm__checkbox:checked+.subscribeForm__checkbox-label::after {
+	background-image: url("../images/check.svg");
+}
+
+@media (min-width: $tablet-width) {
+	.subscribe {
+		margin-bottom: 29px;
+
+		& b {
+			font-size: 3.2rem;
+			line-height: 4rem;
+		}
+
+		& p {
+			width: 100%;
+			font-size: 2rem;
+			line-height: 3.2rem;
+		}
+	}
+
+	.subscribe__form .flex-wrapper {
+		display: flex;
+		align-items: baseline;
+	}
+
+	.subscribeForm__radio-title {
+		margin-right: 24px;
+	}
+}

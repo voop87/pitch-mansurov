@@ -1,0 +1,21 @@
+.btn {
+	width: 100%;
+	padding: 12px;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	border: none;
+	background-color: transparent;
+}
+
+.btn--dark {
+	color: $bg-color;
+	background-color: $primary-dark;
+
+	&:hover {
+		background-color: #2E4055;
+	}
+
+	&:active {
+		background-color: #3B536D;
+	}
+}

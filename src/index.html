@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gussi - fashion clothes</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div style="display: none">
+		<include src="build/images/sprite.svg"></include>
+	</div>
+
+	<main>
+		<h1 class="visually-hidden">Gussi - fashion clothes</h1>
+
+		<section class="slider">
+			<img class="logo" src="./images/Logo.svg" alt="logo Gussi" width="65" height="36">
+			<div class="slider__wrapper">
+				<ul class="slider__items">
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" media="(min-width: 1360px)" srcset="./images/slide-1-xl.webp">
+							<source type="image/webp" media="(min-width: 720px)" srcset="./images/slide-1-md.webp">
+							<source type="image/webp" srcset="./images/slide-1-sm.webp">
+
+							<source media="(min-width: 1360px)" srcset="./images/slide-1-xl.jpg">
+							<source media="(min-width: 720px)" srcset="./images/slide-1-md.jpg">
+							<img class="slider__image" src="./images/slide-1-sm.jpg" alt="light coat">
+						</picture>
+						<div class="slider__item-info">
+							<h3 class="slider__item-title">Light coat</h3>
+							<p class="slider__item-description">More cotton, more freedom</p>
+						</div>
+						<div class="slider__shadow-box"></div>
+					</li>
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" media="(min-width: 1360px)" srcset="./images/slide-2-xl.webp">
+							<source type="image/webp" media="(min-width: 720px)" srcset="./images/slide-2-md.webp">
+							<source type="image/webp" srcset="./images/slide-2-sm.webp">
+
+							<source media="(min-width: 1360px)" srcset="./images/slide-2-xl.jpg">
+							<source media="(min-width: 720px)" srcset="./images/slide-2-md.jpg">
+							<img class="slider__image" src="./images/slide-2-sm.jpg" alt="light coat">
+						</picture>
+						<div class="slider__item-info">
+							<h3 class="slider__item-title">Lime jacket</h3>
+							<p class="slider__item-description">More cotton, more freedom</p>
+						</div>
+						<div class="slider__shadow-box"></div>
+					</li>
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" media="(min-width: 1360px)" srcset="./images/slide-3-xl.webp">
+							<source type="image/webp" media="(min-width: 720px)" srcset="./images/slide-3-md.webp">
+							<source type="image/webp" srcset="./images/slide-3-sm.webp">
+
+							<source media="(min-width: 1360px)" srcset="./images/slide-3-xl.jpg">
+							<source media="(min-width: 720px)" srcset="./images/slide-3-md.jpg">
+							<img class="slider__image" src="./images/slide-3-sm.jpg" alt="light coat">
+						</picture>
+						<div class="slider__item-info">
+							<h3 class="slider__item-title">Sandy longsleeve</h3>
+							<p class="slider__item-description">More cotton, more freedom</p>
+						</div>
+						<div class="slider__shadow-box"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="slider__controls">
+				<div class="slider__buttons">
+					<button class="slider__btn slider__btn--prev" type="button" aria-label="previous slide">
+						<svg width="10" height="16">
+							<use xlink:href="images/sprite.svg#arrow-left-icon"></use>
+						</svg>
+					</button>
+					<button class="slider__btn slider__btn--next" type="button" aria-label="next-slide">
+						<svg width="10" height="16">
+							<use xlink:href="images/sprite.svg#arrow-left-icon"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="slider__count">
+					<span class="slider__current-slide">01</span>
+					<span class="slider__line"></span>
+					<span class="slider__total-slides">03</span>
+				</div>
+			</div>
+		</section>
+
+		<div>
+			<section class="new-collection">
+				<div class="container">
+					<h2 class="section-title">New collection</h2>
+					<div class="new-collection__item-card item-card">
+						<h3 class="item-card__title">Gussi light coat</h3>
+						<p class="item-card__info">
+							It takes you from the party to the
+							after party with its fashion-forward
+							styles. A playfull blendof retro and
+							modern outdoor design.
+						</p>
+						<form class="item-card__form form" action="#">
+							<fieldset class="form__fieldset">
+								<div class="form__color">
+									<h4 class="section-title">COLOUR</h4>
+									<ul>
+										<li>
+											<input class="form__color-input visually-hidden" name="color" type="radio" id="violet" checked>
+											<label class="form__color-label form__color-label--violet" for="violet"
+												aria-label="violet"></label>
+										</li>
+										<li>
+											<input class="form__color-input visually-hidden" name="color" type="radio" id="gray">
+											<label class="form__color-label form__color-label--gray" for="gray" aria-label="gray"></label>
+										</li>
+										<li>
+											<input class="form__color-input visually-hidden" name="color" type="radio" id="darkgray">
+											<label class="form__color-label form__color-label--darkgray" for="darkgray"
+												aria-label="darkgray"></label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="form__size">
+									<h4 class="section-title">Size</h4>
+									<ul>
+										<li>
+											<input class="form__size-input visually-hidden" name="size" type="radio" id="xs-size">
+											<label class="form__size-label" for="xs-size" aria-label="xs-size">xs</label>
+										</li>
+										<li>
+											<input class="form__size-input visually-hidden" name="size" type="radio" id="s-size" checked>
+											<label class="form__size-label" for="s-size" aria-label="s-size">s</label>
+										</li>
+										<li>
+											<input class="form__size-input visually-hidden" name="size" type="radio" id="m-size">
+											<label class="form__size-label" for="m-size" aria-label="m-size">m</label>
+										</li>
+										<li>
+											<input class="form__size-input visually-hidden" name="size" type="radio" id="l-size">
+											<label class="form__size-label" for="l-size" aria-label="l-size">l</label>
+										</li>
+										<li>
+											<input class="form__size-input visually-hidden" name="size" type="radio" id="xl-size" disabled>
+											<label class="form__size-label" for="xl-size" aria-label="xl-size">xl</label>
+										</li>
+									</ul>
+								</div>
+
+								<button class="form__size-guide-btn" type="button">Size guide</button>
+
+								<div class="flex-wrapper">
+									<div class="form__quantity">
+										<h4 class="section-title">Quantity</h4>
+										<div class="form__quantity-inner">
+											<button class="form__quantity-btn" id="quantity-remove" type="button">
+												<svg width="10" height="1.5">
+													<use xlink:href="images/sprite.svg#minus-icon"></use>
+												</svg>
+											</button>
+											<input class="form__quantity-input" type="text" value="1" disabled>
+											<button class="form__quantity-btn" id="quantity-add" type="button">
+												<svg width="10" height="10">
+													<use xlink:href="images/sprite.svg#plus-icon"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="form__total">
+										<h4 class="section-title">Cost</h4>
+										<div class="flex-wrapper" id="price" data-price="120.00">
+											<span class="form__total-colored">
+												&#36;
+												<span id="dollar">120</span>
+											</span>
+											<span class="form__total-dark">.<span id="cent">00</span></span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<div class="form__details">
+								<h4 class="section-title">PRODUCT DETAILS</h4>
+								<p class="form__details-text">
+									Look out for its standout party dresses, feminine details, statement
+									jackets and cool denim including skinny-cut jeans and cute denim shorts,
+									which sit alongside its directional footwear and swimwear ranges.
+								</p>
+								<span class="form__details-material">63% Viscose, 37% Polyamide.</span>
+							</div>
+
+							<button class="form__submit-btn btn btn--dark" type="submit">Order now</button>
+
+							<button class="form__service-btn form__service-btn--closed" type="button">
+								<div>
+									<span>Delivery</span>
+									<span class="form__service-icon"></span>
+								</div>
+
+								<p class="form__service-info">
+									Delivered on or before <span class="form__delivery-date">Monday, 25 February 2019</span> <br>
+									Note: Subject to placing your order before specific cut-off times.
+									Details available in checkout.
+									<br><br>
+									For free delivery – spend over <b>£<span class="form__free-delivery-price">18.08</span></b>
+								</p>
+							</button>
+							<button class="form__service-btn form__service-btn--closed" type="button">
+								<div>
+									<span>Return</span>
+									<span class="form__service-icon"></span>
+								</div>
+
+								<p class="form__service-info">
+									Return through your local Boxberry store available in over 2,300 locations.<br>
+									You can create your return on the carrier website by clicking the create return link.<br>
+									Open 7 days a week, early until late.
+								</p>
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="similar-collections">
+				<div class="container">
+					<h2 class="section-title">Similar Collections</h2>
+
+					<ul>
+						<li>
+							<a class="similar-collections__link" href="#">
+								<picture>
+									<source type="image/webp" media="(min-width: 1360px)" srcset="./images/kingsman-bg.webp">
+									<source type="image/webp" media="(min-width: 720px)" srcset="./images/kingsman-bg-md.webp">
+									<source type="image/webp" srcset="./images/kingsman-bg.webp">
+
+									<source media="(min-width: 1360px)" srcset="./images/kingsman-bg.jpg">
+									<source media="(min-width: 720px)" srcset="./images/kingsman-bg-md.jpg">
+									<img class="similar-collections__image" src="./images/kingsman-bg.jpg" alt="Kingsman collection"
+										width="288" height="160">
+								</picture>
+								<div class="similar-collections__info">
+									<h3 class="similar-collections__title">Kingsman style</h3>
+									<span>More silk, more freedom</span>
+								</div>
+								<div class="box-shadow"></div>
+							</a>
+						</li>
+						<li>
+							<a class="similar-collections__link" href="#">
+								<picture>
+									<source type="image/webp" media="(min-width: 1360px)" srcset="./images/denim-bg.webp">
+									<source type="image/webp" media="(min-width: 720px)" srcset="./images/denim-bg-md.webp">
+									<source type="image/webp" srcset="./images/denim-bg.webp">
+
+									<source media="(min-width: 1360px)" srcset="./images/denim.jpg">
+									<source media="(min-width: 720px)" srcset="./images/denim-bg-md.jpg">
+									<img class="similar-collections__image" src="./images/denim-bg.jpg" alt="Denim collection" width="288"
+										height="160">
+								</picture>
+								<div class="similar-collections__info">
+									<h3 class="similar-collections__title">Denim goddess</h3>
+									<span>More denim, more freedom</span>
+								</div>
+								<div class="box-shadow"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="subscribe">
+				<div class="container">
+					<h2 class="visually-hidden">Subscribe form</h2>
+
+					<b>Subscribe our newsletter</b>
+					<p>Get notified about new collections of Gussi Store</p>
+
+					<form action="#" class="subscribe__form subscribeForm">
+
+						<input class="subscribeForm__input" type="text" required placeholder="Enter your name">
+						<input class="subscribeForm__input" type="email" required placeholder="Enter your email">
+
+						<div class="flex-wrapper">
+							<span class="subscribeForm__radio-title">Choose your gender:</span>
+							<ul>
+								<li>
+									<input class="subscribeForm__radio visually-hidden" type="radio" name="gender" id="male" checked
+										aria-label="male">
+									<label class="subscribeForm__radio-label" for="male">Male</label>
+								</li>
+								<li>
+									<input class="subscribeForm__radio visually-hidden" type="radio" name="gender" id="female" checked
+										aria-label="female">
+									<label class="subscribeForm__radio-label" for="female">Female</label>
+								</li>
+							</ul>
+						</div>
+
+						<input class="subscribeForm__checkbox visually-hidden" name="additional-subscribe" id="additional"
+							type="checkbox" aria-label="additional subscribe" checked>
+						<label class="subscribeForm__checkbox-label" for="additional">
+							Look out for its standout party dresses, feminine details
+						</label>
+
+						<button class="subscribeForm__submit btn btn--dark" type="submit">
+							Subscribe Gussi
+						</button>
+					</form>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<script src="./js/index.js"></script>
+	<script src="./js/slider.js"></script>
+</body>
+
+</html>

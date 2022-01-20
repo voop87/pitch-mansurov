@@ -1,0 +1,261 @@
+.form__fieldset {
+	margin: 0;
+	margin-bottom: 28px;
+	padding: 16px 0;
+	border-left: none;
+	border-right: none;
+	border-color: $light-gray;
+}
+
+.form__color,
+.form__size {
+	margin-bottom: 24px;
+
+	ul {
+		width: 144px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li {
+		position: relative;
+	}
+}
+
+.form__color-label {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+
+	&--violet {
+		background-color: #192B3F;
+	}
+
+	&--gray {
+		background-color: #8A94A6;
+	}
+
+	&--darkgray {
+		background-color: #3D5876;
+	}
+}
+
+.form__size {
+	margin-bottom: 36px;
+}
+
+.form__size ul {
+	width: 220px;
+}
+
+.form__color-input:checked+.form__color-label::after,
+.form__size-input:checked+.form__size-label::after {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	border: 1px solid $primary-dark;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.form__color-input:not(:disabled)+.form__color-label:hover::after,
+.form__size-input:not(:disabled)+.form__size-label:hover::after {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	border: 1px solid $primary-light;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.form__size-input:checked+.form__size-label::after,
+.form__size-input:not(:disabled)+.form__size-label:hover::after {
+	top: -12px;
+	left: -9px;
+}
+
+.form__size-label {
+	display: block;
+	width: 30px;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: $primary-light;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.form__size-input:checked+.form__size-label {
+	font-size: 2.8rem;
+	color: $primary-dark;
+}
+
+.form__size-input:disabled+.form__size-label {
+	color: $light-gray;
+}
+
+.form__size-guide-btn {
+	width: 92px;
+	height: 28px;
+	margin-bottom: 32px;
+	color: $secondary;
+	border: 1px solid $secondary;
+	border-radius: 24px;
+	background-color: transparent;
+
+	&:hover {
+		color: $bg-color;
+		background-color: $secondary;
+	}
+}
+
+.form__quantity {
+	width: 78px;
+	margin-right: 74px;
+}
+
+.form__quantity-inner {
+	margin-top: 23px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__quantity-btn {
+	display: flex;
+	padding: 0;
+	align-items: center;
+	border: none;
+	background-color: transparent;
+}
+
+.form__quantity-input {
+	width: 40px;
+	padding: 0;
+	text-align: center;
+	font-size: 2.4rem;
+	color: $primary-light;
+	background-color: transparent;
+	border: none;
+}
+
+.form__total .flex-wrapper {
+	align-items: baseline;
+}
+
+.form__total-colored {
+	color: $secondary;
+	font-size: 4rem;
+	line-height: 4rem;
+}
+
+.form__total-dark {
+	color: $primary-light;
+	font-size: 2.4rem;
+}
+
+.form__details {
+	margin-bottom: 40px;
+}
+
+.form__details .section-title {
+	margin-bottom: 8px;
+}
+
+.form__details-material {
+	color: $primary-light;
+}
+
+.form__submit-btn {
+	margin-bottom: 32px;
+}
+
+.form__service-btn {
+	width: 100%;
+	padding: 8px 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	border: none;
+	border-bottom: 1px solid $light-gray;
+	background-color: transparent;
+
+	&:hover {
+		border-bottom-color: $primary-dark;
+	}
+
+	&--closed .form__service-info {
+		display: none;
+	}
+
+	&--closed .form__service-icon {
+		background-image: url("../images/plus-icon.svg");
+		height: 10px;
+	}
+
+	& div {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.form__service-icon {
+	width: 10px;
+	height: 1.5px;
+	background-image: url("../images/minus-icon.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.form__service-info {
+	display: block;
+	color: $primary-light;
+	text-align: left;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+	.form__fieldset {
+		display: flex;
+		max-width: 720px;
+		flex-wrap: wrap;
+	}
+
+	.form__color {
+		width: 148px;
+		margin-right: 72px;
+		margin-bottom: 36px;
+	}
+
+	.form__size {
+		width: 230px;
+		margin-right: 40px;
+	}
+
+	.form__size-guide-btn {
+		margin-top: 38px;
+		margin-right: 40px;
+	}
+
+	.form__details-text {
+		margin-bottom: 8px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.form__details {
+		margin-bottom: 82px;
+	}
+}

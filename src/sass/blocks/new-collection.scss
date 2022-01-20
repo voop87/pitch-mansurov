@@ -1,0 +1,9 @@
+.new-collection {
+	padding-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+	.new-collection {
+		margin-top: 56px;
+	}
+}
